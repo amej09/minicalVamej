@@ -11,7 +11,7 @@
          "singular":"room type",
          "plural": "room types"
       },
-      "send_invoice_email_automatically" : true,
+      "send_invoice_email_automatically" : false,
       "display_tooltip" : true,
       "is_total_balance_include_forecast" : true
    }
