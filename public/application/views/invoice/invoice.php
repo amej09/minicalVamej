@@ -484,23 +484,10 @@
             </div>
         <?php } ?>
         <div class="panel panel-default">
-            <div class="h2 charge_div">
-                <div class="col-sm-8">
+            <div class="h2 text-left charge_div">
                     <?php echo l('charges'); ?>
-                </div>
-                <div class="col-sm-4 text-right m-022">
-                    <button class="hidden-print btn btn-light btn-sm expand-all">
-                        <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                        <?php echo l('expand_all'); ?>
-                    </button>
-                    <button class="hidden-print btn btn-light btn-sm collapse-all">
-                        <i class="glyphicon glyphicon-minus" aria-hidden="true"></i>
-                        <?php echo l('collapse_all'); ?>
-                    </button>
-                </div>
             </div>
-
-            <div class="table-responsive col-lg-12">
+            <div class="table-responsive  ">
             <table id="charge-table" class="table" >
                 <thead>
                 <tr>
@@ -1037,46 +1024,10 @@
                 </div>
             </div>
         </div>
+        <!--pannel nouveau charges-->
+              <!-- /pannel nouveau charges-->
 
+       
     </div> <!-- /. container -->
-    <?php
-    if ($menu_on === true):
-        ?>
-        <div class="md-col-12 hidden-print">
-            <div class="col-md-3">
-            </div>
-
-            <div class="jumbotron col-md-6 col-xs-12">
-                <h4><?php echo l('invoice').' '.l('log'); ?></h4>
-                <div class="table-responsive">
-                <table class="table">
-                    <?php
-                    foreach ($invoice_log as $r):
-                        ?>
-                        <tr>
-                            <td class="text-left">
-                                <?php
-                                $log_date = new DateTime($r->date_time, new DateTimeZone('UTC'));
-                                $log_date->setTimeZone(new DateTimeZone($company['time_zone']));
-                                echo $log_date->format('y-m-d h:i A');
-                                ?>
-                            </td>
-                            <td class="text-left">
-                                <?php echo $r->log; ?>
-                            </td>
-                        </tr>
-                    <?php
-                    endforeach;
-                    ?>
-
-                </table>
-                </div>
-            </div>  <!-- /. container.. -->
-
-            <div class="col-md-3">
-            </div>
-        </div>
-    <?php
-    endif;
-    ?>
+    
 </div></div>

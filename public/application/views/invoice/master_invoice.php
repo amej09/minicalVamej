@@ -1,4 +1,5 @@
 <?php if (!$read_only): ?>
+	
             <input type="hidden" class="text-right" id="booking_id" value="<?php echo $single_booking_id; ?>"/> 
 			<input type="hidden" class="text-right" id="booking_id_for_group_confirmation_email" value="<?php echo $first_booking_id; ?>"/>   
 			<div class="modal fade"  id="add-payment-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
